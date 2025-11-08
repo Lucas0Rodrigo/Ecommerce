@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+
+*{
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    padding: 12px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 9999;
+}   
+header nav ul{
+    list-style: none;
+    text-align: center;
+}
+header nav ul li{
+    display: inline;
+}
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    padding: 2px 25px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 2s;
+}
+header nav ul li a:hover{
+    color: rgb(85, 85, 85);
+    transition: 2s;
+}
+
+/*Carros*/
+
+.carros-container {
+    margin-top: 0px; /* espaço pro header fixo */
+    padding: 90px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    background-color: #f5f5f5;
+}
+
+.carro {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.carro:hover {
+    transform: translateY(-10px);
+}
+
+.carro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.carro h2 {
+    font-family: 'Sigmar', cursive;
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+}
+
+.carro p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.carro button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carro button:hover {
+    background-color: #444;
+}
+
+/*Serviços*/
+
+.servicos-container {
+    padding: 90px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    background-color: #f5f5f5;
+}
+
+.servico {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+}
+
+.servico h3 {
+    font-family: 'Sigmar', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-family: 'Segoe UI';
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #999;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    max-width: 600px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-info {
+        margin-bottom: 20px;
+    }
+}
